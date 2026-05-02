@@ -5,7 +5,7 @@ function Counter({ end, label, color }) {
 
   useEffect(() => {
     let start = 0;
-    const duration = 1200; // 1.2 detik
+    const duration = 1200;
     const stepTime = 20;
 
     const increment = end / (duration / stepTime);
@@ -24,14 +24,21 @@ function Counter({ end, label, color }) {
     return () => clearInterval(timer);
   }, [end]);
 
+  const colors = {
+    blue: "bg-blue-500/10 border-blue-500/20 text-blue-500",
+    purple: "bg-purple-500/10 border-purple-500/20 text-purple-500",
+    pink: "bg-pink-500/10 border-pink-500/20 text-pink-500",
+  };
+
   return (
     <div
-      className={`p-4 rounded-xl text-center border bg-${color}-500/10 border-${color}-500/20`}
+      className={`p-4 rounded-xl text-center border transition hover:scale-105 duration-300 ${colors[color]}`}
     >
       <h3 className="text-2xl font-bold">
         {count}+
       </h3>
-      <p className="text-xs text-gray-500">{label}</p>
+
+      <p className="text-xs opacity-70">{label}</p>
     </div>
   );
 }

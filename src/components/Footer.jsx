@@ -9,11 +9,11 @@ import { FiMail, FiGlobe } from "react-icons/fi";
 
 function Footer() {
   const socials = [
-    { icon: FiGlobe, href: "https://yourwebsite.com", color: "hover:bg-blue-500", label: "Website" },
-    { icon: FaInstagram, href: "https://instagram.com", color: "hover:bg-pink-500", label: "Instagram" },
-    { icon: FaLinkedin, href: "https://linkedin.com", color: "hover:bg-blue-600", label: "LinkedIn" },
-    { icon: FaGithub, href: "https://github.com", color: "hover:bg-gray-900", label: "GitHub" },
-    { icon: FiMail, href: "mailto:youremail@gmail.com", color: "hover:bg-green-500", label: "Email" },
+    { icon: FiGlobe, href: "https://portfolio-topaz-pi-60.vercel.app/", color: "hover:bg-blue-500", label: "Website" },
+    { icon: FaInstagram, href: "https://instagram.com/ahmadzainularifin28", color: "hover:bg-pink-500", label: "Instagram" },
+    { icon: FaLinkedin, href: "https://www.linkedin.com/in/ahmad-zainul-arifin-511166378?utm_source=share_via&utm_content=profile&utm_medium=member_android", color: "hover:bg-blue-600", label: "LinkedIn" },
+    { icon: FaGithub, href: "https://github.com/arifin281297", color: "hover:bg-gray-900", label: "GitHub" },
+    { icon: FiMail, href: "mailto:arifin281297@gmail.com", color: "hover:bg-green-500", label: "Email" },
   ];
 
   return (
@@ -31,7 +31,7 @@ function Footer() {
           {/* BRAND */}
           <div>
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">
-              Your Company
+              Logo Company
             </h2>
             <p className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed">
               We build modern digital products, scalable apps, and premium UI/UX experiences.
@@ -98,7 +98,7 @@ function Footer() {
 
         {/* DIVIDER */}
         <div className="border-t border-gray-200 dark:border-gray-800 pt-6 text-center text-sm text-gray-500 dark:text-gray-400">
-          © {new Date().getFullYear()} Your Company. All rights reserved.
+          © {new Date().getFullYear()} Ahmad Zainul Arifin. All rights reserved.
         </div>
 
       </div>

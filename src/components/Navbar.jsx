@@ -53,7 +53,7 @@ export default function Navbar() {
             {/* LOGO */}
             <h1 className="text-lg font-bold text-gray-900 dark:text-white">
               <Link to="/" className="hover:opacity-80 transition">
-                Your Company
+                Logo Company
               </Link>
             </h1>
 
